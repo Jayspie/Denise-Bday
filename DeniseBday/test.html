@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Denise's Party</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <img id="gif" src="videos/giphy.gif" alt="butt">
+    </div>
+    <div id="loade-time">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Wishlist</a>
+            <a href="#">RSVP</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+    </nav>
+    <header>
+        <h1 id="title">Denise's</h1>
+        <h1 id="sub">3rd Birthday Party</h1>
+    </header>
+    <main>
+        <p id="party_info">Thursday June 29 <br><br>
+            1:00pm - 4:00pm<br><br>
+            1468 lays rd, Houston tx</p>
+        <a id="rsvp" href="https://www.coolmathgames.com/0-run" target="_blank">Please click here to RSVP.</a>
+    </main>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "215px";
+  document.getElementById("main").style.marginRight = "1250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+    </script>
+</body>
+
+</html>
