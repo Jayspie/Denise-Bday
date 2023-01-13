@@ -110,10 +110,32 @@ body{
     color:#f8b9d4;
   }
 @media screen and (max-width: 500px) {
-    #gif{
+  #gif{
         width:50%;
         height:auto;
         padding-top: 50%;
         padding-bottom: 50%;
-    }
+  }
+  #title{
+      font-size: 2em;
+      margin-top: 1px;
+      margin-left: 250px;
+  }
+  #sub{
+    border-color: green;
+    font-size: 1em;
+    margin-top: -100px;
+    margin:auto;
+  }
+  #party_info{
+      font-size: .5em;
+      margin-top: 250px;
+     /* margin-left: 250px;*/
+  }
+  #rsvp{
+      font-size: .5em;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 250px;
+  }
 }
