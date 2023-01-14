@@ -117,25 +117,32 @@ body{
         padding-bottom: 50%;
   }
   #title{
-      font-size: 2em;
-      margin-top: 1px;
-      margin-left: 250px;
+    border: 2px solid green;
+    width: 200%;
+    font-size: 2em;
+    margin-top: 1px;
+    margin-left: 250px;
   }
   #sub{
-    border-color: green;
+    margin-left: 200px;
     font-size: 1em;
+    width: 1000px;
+    border: 2px solid green;
     margin-top: -100px;
-    margin:auto;
   }
   #party_info{
+    border: 2px solid green;
       font-size: .5em;
       margin-top: 250px;
-     /* margin-left: 250px;*/
+     margin-left: 250px;
+     width: 200%;
   }
   #rsvp{
-      font-size: .5em;
-      color: #fff;
-      text-decoration: none;
-      margin-left: 250px;
+    border: 2px solid green;
+    font-size: 50px;
+    width: 140px; 
+    margin-bottom: 300x;
+    margin-left: 250px;
+    white-space: nowrap;
   }
 }
