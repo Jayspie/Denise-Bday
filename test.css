@@ -116,33 +116,54 @@ body{
         padding-top: 50%;
         padding-bottom: 50%;
   }
+  body{
+    background-image: url("videos/livingroom.png");
+    background-size: cover;
+    font-size: 72px;
+
+  }
+  .openbtn {
+    font-size: 1em;
+    margin-left: 500px;
+  }
+  .sidebar {
+    background-color: transparent;
+  }
   #title{
-    border: 2px solid green;
-    width: 200%;
-    font-size: 2em;
+
+    width: 100%;
+    font-size: 1.65em;
     margin-top: 1px;
-    margin-left: 250px;
+    margin-left:65px;
   }
   #sub{
-    margin-left: 200px;
-    font-size: 1em;
-    width: 1000px;
-    border: 2px solid green;
-    margin-top: -100px;
+    margin-left: 55px;
+    font-size: .90em;
+    width: 125%;
+    margin-top: -50px;
   }
   #party_info{
-    border: 2px solid green;
-      font-size: .5em;
-      margin-top: 250px;
-     margin-left: 250px;
-     width: 200%;
+    
+    font-size: .5em;
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 105px;
   }
   #rsvp{
-    border: 2px solid green;
-    font-size: 50px;
+   
+    font-size: .5em;
     width: 140px; 
-    margin-bottom: 300x;
-    margin-left: 250px;
+    margin-left: 90px;
+    margin-bottom: 300px;
+
     white-space: nowrap;
   }
+  /*.vl {
+    border-left: 6px solid green;
+    height: 1000px;
+    position: absolute;
+    left: 75%;
+    margin-left: -3px;
+    top: 0;
+  }*/
 }
