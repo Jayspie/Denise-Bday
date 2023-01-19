@@ -1,169 +1,150 @@
 #preloader{
-    /*background:#88CAFC;*/
-    background: linear-gradient(#88CAFC, #d2ebff);
-    height:100%;
-    width:100%;
-    position:fixed;
-    top: 0;
-    left: 0;
+  /*background:#88CAFC;*/
+  background: linear-gradient(#88CAFC, #d2ebff);
+  height:100%;
+  width:100%;
+  position:fixed;
+  top: 0;
+  left: 0;
 }
 #gif{
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 
 }
 #loade-time{
-    display: none;
+  display: none;
 }
 @font-face {
-    font-family: HelloHeadlineW00Regular;
-    src: url("FontsFree-Net-Hello-Headline-W00-Regular.ttf")
+  font-family: HelloHeadlineW00Regular;
+  src: url("FontsFree-Net-Hello-Headline-W00-Regular.ttf")
 }
 
 body{
-   background: linear-gradient(#88CAFC, #d2ebff);
-   /* background-image:url("videos/ezgif-4-41336f5670.jpg");
-   background-size: cover;*/
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: HelloHeadlineW00Regular;
-    color:#fff;
-    text-align: center;
-    font-size: 100px
+ background: linear-gradient(#88CAFC, #d2ebff);
+ /* background-image:url("videos/ezgif-4-41336f5670.jpg");
+ background-size: cover;*/
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: HelloHeadlineW00Regular;
+  color:#fff;
+  text-align: center;
+  font-size: 100px
+}
+.logo{
+  display:none;
 }
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background: linear-gradient(#88CAFC, #d2ebff);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(#88CAFC, #d2ebff);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding-bottom: 100px;
+  padding-left: 50px;
+  text-decoration: none;
+  font-size: .375em;
+  text-align: left;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f8b9d4;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
   
-  .sidebar a {
-    padding-bottom: 100px;
-    padding-left: 50px;
-    text-decoration: none;
-    font-size: .375em;
-    text-align: left;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f8b9d4;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    
-  }
-  
-  .openbtn {
-    font-size: 0.5em;
-    background-color:transparent;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    margin-left: 1200px;
-  }
-  
-  .openbtn:hover {
-    color: #f8b9d4;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
+}
+
+.openbtn {
+  font-size: 0.5em;
+  background-color:transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 1200px;
+}
+
+.openbtn:hover {
+  color: #f8b9d4;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 
 #title{
-    font-size: 2em;
-    margin-top: 1px;
+  font-size: 2em;
+  margin-top: 1px;
 }
 #sub{
-    font-size: 1em;
-    margin-top: -175px;
+  font-size: 1em;
+  margin-top: -175px;
 }
 #party_info{
-    font-size: .5em;
-    margin-top: 250px;
+  font-size: .5em;
+  margin-top: 250px;
 }
 #rsvp{
-    font-size: .5em;
-    color: #fff;
-    text-decoration: none;
+  font-size: .5em;
+  color: #fff;
+  text-decoration: none;
 
 }
 
-  #rsvp:hover {
-    color:#f8b9d4;
-  }
+#rsvp:hover {
+  color:#f8b9d4;
+}
 @media screen and (max-width: 500px) {
-  #gif{
-        width:50%;
-        height:auto;
-        padding-top: 50%;
-        padding-bottom: 50%;
-  }
-  body{
-    background-image: url("videos/livingroom.png");
-    background-size: cover;
-    font-size: 72px;
+#gif{
+  width:50%;
+  height:auto;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+body{
+  background-image:url("videos/livingroom.png");
 
-  }
-  .openbtn {
-    font-size: 1em;
-    margin-left: 500px;
-  }
-  .sidebar {
-    background-color: transparent;
-  }
-  #title{
-
-    width: 100%;
-    font-size: 1.65em;
-    margin-top: 1px;
-    margin-left:65px;
-  }
-  #sub{
-    margin-left: 55px;
-    font-size: .90em;
-    width: 125%;
-    margin-top: -50px;
-  }
-  #party_info{
-    
-    font-size: .5em;
-    margin-top: 100px;
-    width: 100%;
-    margin-left: 105px;
-  }
-  #rsvp{
-   
-    font-size: .5em;
-    width: 140px; 
-    margin-left: 90px;
-    margin-bottom: 300px;
-
-    white-space: nowrap;
-  }
-  /*.vl {
-    border-left: 6px solid green;
-    height: 1000px;
-    position: absolute;
-    left: 75%;
-    margin-left: -3px;
-    top: 0;
-  }*/
+  background-size: cover;
+  font-size:72px;
+}
+.openbtn {
+  font-size: 1em;
+  background-color:transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-left: 550px;
+}
+#logo{
+  font-size: .5em;
+  color:white;
+  text-decoration: none;
+  margin-left: -1px;
+}
+/*.vl {
+  border-left: 6px solid green;
+  height: 1400px;
+  position: absolute;
+  left: 338px;
+  margin-left: -3px;
+  top: 0%;
+}*/
 }
