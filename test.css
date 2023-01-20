@@ -143,11 +143,14 @@ body{
   margin-left: -10px;
   margin-top: -92px;
 }
+#logo:active{
+  color:#f8b9d4;
+}
 
 #title{
   font-size: 1.75em;
   margin-top: 10px;
-  margin-left:65px;
+  margin-left:90px;
 }
 
 #sub{
@@ -155,8 +158,23 @@ body{
   font-size: .85em;
   margin-top: -125px;
   margin-left:125px;
-}.vl {
-
+}
+#party_info{
+  width:100%;
+  font-size: .5em;
+  margin-top: 115px;
+  margin-left:122px;
+  color:#404066;
+}
+#rsvp{
+  width: 100%;
+  font-size: .5em;
+  color: #404066;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 110px;
+}
+.vl {
   height: 1400px;
   position: absolute;
   left: 330px;
