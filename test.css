@@ -126,6 +126,7 @@ body{
   font-size:72px;
 }
 .openbtn {
+  
   font-size: 1em;
   background-color:transparent;
   color: white;
@@ -135,17 +136,31 @@ body{
 }
 #logo{
   display: block;
+  width:100%;
   font-size: .5em;
   color:white;
   text-decoration: none;
-  margin-left: -1px;
+  margin-left: -10px;
+  margin-top: -92px;
 }
-/*.vl {
-  border-left: 6px solid green;
+
+#title{
+  font-size: 1.75em;
+  margin-top: 10px;
+  margin-left:65px;
+}
+
+#sub{
+  width:100%;
+  font-size: .85em;
+  margin-top: -125px;
+  margin-left:125px;
+}.vl {
+
   height: 1400px;
   position: absolute;
-  left: 338px;
+  left: 330px;
   margin-left: -3px;
   top: 0%;
-}*/
+}
 }
