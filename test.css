@@ -43,7 +43,7 @@ body{
   z-index: 1;
   top: 0;
   right: 0;
-  background: linear-gradient(#88CAFC, #d2ebff);
+  background: linear-gradient(#88CAFC, #d2ebff);opacity:.95;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -112,7 +112,7 @@ body{
 #rsvp:hover {
   color:#f8b9d4;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 425px) {
 #gif{
   width:50%;
   height:auto;
@@ -121,7 +121,7 @@ body{
 }
 body{
   background-image:url("videos/livingroom.png");
-
+  max-width: 425px;
   background-size: cover;
   font-size:72px;
 }
@@ -156,7 +156,7 @@ body{
 #sub{
   width:100%;
   font-size: .85em;
-  margin-top: -125px;
+  margin-top: -100px;
   margin-left:125px;
 }
 #party_info{
@@ -173,6 +173,7 @@ body{
   text-decoration: none;
   white-space: nowrap;
   margin-left: 110px;
+  margin-top: 250px;
 }
 .vl {
   height: 1400px;
@@ -182,3 +183,216 @@ body{
   top: 0%;
 }
 }
+@media screen and (max-width: 375px) {
+  #gif{
+    width:50%;
+    height:auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+  body{
+    background-image:url("videos/livingroom.png");
+    max-width: 375px;
+    background-size: cover;
+    font-size:72px;
+  }
+  .openbtn {
+    
+    font-size: 1em;
+    background-color:transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 550px;
+  }
+  #logo{
+    display: block;
+    width:100%;
+    font-size: .5em;
+    color:white;
+    text-decoration: none;
+    margin-left: -10px;
+    margin-top: -92px;
+  }
+  #logo:active{
+    color:#f8b9d4;
+  }
+  
+  #title{
+    font-size: 1.75em;
+    margin-top: 10px;
+    margin-left:90px;
+  }
+  
+  #sub{
+    width:100%;
+    font-size: .85em;
+    margin-top: -100px;
+    margin-left:150px;
+  }
+  #party_info{
+    width:100%;
+    font-size: .5em;
+    margin-top: 135px;
+    margin-left:150px;
+    color:#404066;
+  }
+  #rsvp{
+    width: 100%;
+    font-size: .5em;
+    color: #404066;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 115px;
+    margin-top:150px;
+  }
+  .vl {
+    height: 1400px;
+    position: absolute;
+    left: 335px;
+    margin-left: -3px;
+    top: 0%;
+  }
+  }
+  @media screen and (max-width: 320px) {
+    #gif{
+      width:50%;
+      height:auto;
+      padding-top: 50%;
+      padding-bottom: 50%;
+    }
+    body{
+      background-image:url("videos/livingroom.png");
+      max-width: 320px;
+      background-size: cover;
+      font-size:72px;
+    }
+    .openbtn {
+      
+      font-size: 1em;
+      background-color:transparent;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin-left: 550px;
+    }
+    #logo{
+      display: block;
+      width:100%;
+      font-size: .5em;
+      color:white;
+      text-decoration: none;
+      margin-left: -10px;
+      margin-top: -92px;
+    }
+    #logo:active{
+      color:#f8b9d4;
+    }
+    
+    #title{
+      font-size: 1.75em;
+      margin-top: 10px;
+      margin-left:90px;
+    }
+    
+    #sub{
+      width:150%;
+      font-size: .85em;
+      margin-top: -100px;
+      margin-left:95px;
+    }
+    #party_info{
+      width:100%;
+      font-size: .5em;
+      margin-top: 135px;
+      margin-left:175px;
+      color:#404066;
+    }
+    #rsvp{
+      width: 100%;
+      font-size: .5em;
+      color: #404066;
+      text-decoration: none;
+      white-space: nowrap;
+      margin-left: 117px;
+      margin-top:150px;
+    }
+    .vl {
+      height: 1400px;
+      position: absolute;
+      left: 335px;
+      margin-left: -3px;
+      top: 0%;
+    }
+    }
+    @media screen and (max-width: 414px) {
+      #gif{
+        width:50%;
+        height:auto;
+        padding-top: 50%;
+        padding-bottom: 50%;
+      }
+      body{
+        background-image:url("videos/livingroom.png");
+        max-width: 414px;
+        background-size: cover;
+        font-size:72px;
+      }
+      .openbtn {
+        
+        font-size: 1em;
+        background-color:transparent;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        margin-left: 550px;
+      }
+      #logo{
+        display: block;
+        width:100%;
+        font-size: .5em;
+        color:white;
+        text-decoration: none;
+        margin-left: -10px;
+        margin-top: -92px;
+      }
+      #logo:active{
+        color:#f8b9d4;
+      }
+      
+      #title{
+        font-size: 1.75em;
+        margin-top: 10px;
+        margin-left:90px;
+      }
+      
+      #sub{
+        width:150%;
+        font-size: .85em;
+        margin-top: -85px;
+        margin-left:95px;
+      }
+      #party_info{
+        width:100%;
+        font-size: .5em;
+        margin-top: 135px;
+        margin-left:175px;
+        color:#404066;
+      }
+      #rsvp{
+        width: 100%;
+        font-size: .5em;
+        color: #404066;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-left: 117px;
+        margin-top:150px;
+      }
+      .vl {
+        height: 1400px;
+        position: absolute;
+        left: 335px;
+        margin-left: -3px;
+        top: 0%;
+      }
+      }
