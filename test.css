@@ -1,5 +1,4 @@
 #preloader{
-  /*background:#88CAFC;*/
   background: linear-gradient(#88CAFC, #d2ebff);
   height:100%;
   width:100%;
@@ -7,23 +6,25 @@
   top: 0;
   left: 0;
 }
+
 #gif{
   display: block;
   margin: 0 auto;
 
 }
+
 #loade-time{
   display: none;
 }
+
 @font-face {
   font-family: HelloHeadlineW00Regular;
   src: url("FontsFree-Net-Hello-Headline-W00-Regular.ttf")
 }
 
 body{
- background: linear-gradient(#88CAFC, #d2ebff);
- /* background-image:url("videos/ezgif-4-41336f5670.jpg");
- background-size: cover;*/
+  background-image:url("videos/playroom.jpg");
+  background-size:cover;
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -33,9 +34,11 @@ body{
   text-align: center;
   font-size: 100px
 }
+
 #logo{
   display:none;
 }
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -60,6 +63,26 @@ body{
   transition: 0.3s;
 }
 
+.sidebar button {
+  border:none;
+  background-color:transparent;
+  padding-bottom: 50px;
+  padding-left: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family:HelloHeadlineW00Regular;
+  text-align: left;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  width: 75%;
+  height:10px;
+}
+
+.sidebar button:hover{
+  color: #f8b9d4; 
+}
+
 .sidebar a:hover {
   color: #f8b9d4;
 }
@@ -69,7 +92,8 @@ body{
   top: 0;
   right: 25px;
   font-size: 36px;
-  
+  width: 10px;
+  height: 0px;
 }
 
 .openbtn {
@@ -79,6 +103,7 @@ body{
   padding: 10px 15px;
   border: none;
   margin-left: 1200px;
+ 
 }
 
 .openbtn:hover {
@@ -90,6 +115,41 @@ body{
   padding: 16px;
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #88CAFC;
+  opacity: 0.95;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#Menu h1{
+  border:2px solid green;
+  font-size: 1em;
+  margin-top:10px;
+}
+
+#Menu p{
+  font-size: .35em;
+}
+
+#Menu ul{
+  list-style-type: none;
+  margin-top: -20px;
+}
+
+#Menu li{
+  font-size: .5em;
+  margin-top: 20px;
+}
+
 #title{
   font-size: 2em;
   margin-top: 1px;
@@ -98,10 +158,16 @@ body{
   font-size: 1em;
   margin-top: -175px;
 }
+
+header{
+  margin-top:-65px;
+}
+
 #party_info{
   font-size: .5em;
   margin-top: 250px;
 }
+
 #rsvp{
   font-size: .5em;
   color: #fff;
@@ -112,7 +178,9 @@ body{
 #rsvp:hover {
   color:#f8b9d4;
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (max-width: 430px) {
+  
 #gif{
   width:50%;
   height:auto;
@@ -120,31 +188,19 @@ body{
   padding-bottom: 50%;
 }
 body{
-  background-image:url("videos/livingroom.png");
+  width:100%;
   max-width: 425px;
   background-size: cover;
+  background-position: 45%;
   font-size:72px;
 }
 .openbtn {
-  
   font-size: 1em;
   background-color:transparent;
-  color: white;
+  color: #fff;
   padding: 10px 15px;
   border: none;
   margin-left: 550px;
-}
-#logo{
-  display: block;
-  width:100%;
-  font-size: .5em;
-  color:white;
-  text-decoration: none;
-  margin-left: -10px;
-  margin-top: -92px;
-}
-#logo:active{
-  color:#f8b9d4;
 }
 
 #title{
@@ -159,30 +215,26 @@ body{
   margin-top: -100px;
   margin-left:125px;
 }
+
 #party_info{
   width:100%;
   font-size: .5em;
-  margin-top: 115px;
+  margin-top: 200px;
   margin-left:122px;
-  color:#404066;
+  color:#fff;
 }
+
 #rsvp{
   width: 100%;
   font-size: .5em;
-  color: #404066;
+  color: #fff;
   text-decoration: none;
   white-space: nowrap;
   margin-left: 110px;
   margin-top: 250px;
 }
-.vl {
-  height: 1400px;
-  position: absolute;
-  left: 330px;
-  margin-left: -3px;
-  top: 0%;
 }
-}
+
 @media screen and (max-width: 375px) {
   #gif{
     width:50%;
@@ -192,12 +244,10 @@ body{
   }
   body{
     background-image:url("videos/livingroom.png");
-    max-width: 375px;
     background-size: cover;
     font-size:72px;
   }
   .openbtn {
-    
     font-size: 1em;
     background-color:transparent;
     color: white;
@@ -211,30 +261,30 @@ body{
     font-size: .5em;
     color:white;
     text-decoration: none;
-    margin-left: -10px;
+    margin-left: -50px;
     margin-top: -92px;
   }
   #logo:active{
     color:#f8b9d4;
   }
-  
+
   #title{
     font-size: 1.75em;
     margin-top: 10px;
     margin-left:90px;
   }
-  
+
   #sub{
     width:100%;
     font-size: .85em;
     margin-top: -100px;
-    margin-left:150px;
+    margin-left:125px;
   }
   #party_info{
     width:100%;
     font-size: .5em;
-    margin-top: 135px;
-    margin-left:150px;
+    margin-top: 300px;
+    margin-left:125px;
     color:#404066;
   }
   #rsvp{
@@ -246,153 +296,66 @@ body{
     margin-left: 115px;
     margin-top:150px;
   }
-  .vl {
-    height: 1400px;
-    position: absolute;
-    left: 335px;
-    margin-left: -3px;
-    top: 0%;
-  }
   }
   @media screen and (max-width: 320px) {
-    #gif{
-      width:50%;
-      height:auto;
-      padding-top: 50%;
-      padding-bottom: 50%;
-    }
-    body{
-      background-image:url("videos/livingroom.png");
-      max-width: 320px;
-      background-size: cover;
-      font-size:72px;
-    }
-    .openbtn {
-      
-      font-size: 1em;
-      background-color:transparent;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      margin-left: 550px;
-    }
-    #logo{
-      display: block;
-      width:100%;
-      font-size: .5em;
-      color:white;
-      text-decoration: none;
-      margin-left: -10px;
-      margin-top: -92px;
-    }
-    #logo:active{
-      color:#f8b9d4;
-    }
-    
-    #title{
-      font-size: 1.75em;
-      margin-top: 10px;
-      margin-left:90px;
-    }
-    
-    #sub{
-      width:150%;
-      font-size: .85em;
-      margin-top: -100px;
-      margin-left:95px;
-    }
-    #party_info{
-      width:100%;
-      font-size: .5em;
-      margin-top: 135px;
-      margin-left:175px;
-      color:#404066;
-    }
-    #rsvp{
-      width: 100%;
-      font-size: .5em;
-      color: #404066;
-      text-decoration: none;
-      white-space: nowrap;
-      margin-left: 117px;
-      margin-top:150px;
-    }
-    .vl {
-      height: 1400px;
-      position: absolute;
-      left: 335px;
-      margin-left: -3px;
-      top: 0%;
-    }
-    }
-    @media screen and (max-width: 414px) {
-      #gif{
-        width:50%;
-        height:auto;
-        padding-top: 50%;
-        padding-bottom: 50%;
-      }
-      body{
-        background-image:url("videos/livingroom.png");
-        max-width: 414px;
-        background-size: cover;
-        font-size:72px;
-      }
-      .openbtn {
-        
-        font-size: 1em;
-        background-color:transparent;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        margin-left: 550px;
-      }
-      #logo{
-        display: block;
-        width:100%;
-        font-size: .5em;
-        color:white;
-        text-decoration: none;
-        margin-left: -10px;
-        margin-top: -92px;
-      }
-      #logo:active{
-        color:#f8b9d4;
-      }
-      
-      #title{
-        font-size: 1.75em;
-        margin-top: 10px;
-        margin-left:90px;
-      }
-      
-      #sub{
-        width:150%;
-        font-size: .85em;
-        margin-top: -85px;
-        margin-left:95px;
-      }
-      #party_info{
-        width:100%;
-        font-size: .5em;
-        margin-top: 135px;
-        margin-left:175px;
-        color:#404066;
-      }
-      #rsvp{
-        width: 100%;
-        font-size: .5em;
-        color: #404066;
-        text-decoration: none;
-        white-space: nowrap;
-        margin-left: 117px;
-        margin-top:150px;
-      }
-      .vl {
-        height: 1400px;
-        position: absolute;
-        left: 335px;
-        margin-left: -3px;
-        top: 0%;
-      }
-      }
+  #gif{
+    width:50%;
+    height:auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+  body{
+    background-image:url("videos/livingroom.png");
+    background-size: cover;
+    font-size:72px;
+  }
+  .openbtn {
+    font-size: 1em;
+    background-color:transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 550px;
+  }
+  #logo{
+    display: block;
+    width:100%;
+    font-size: .5em;
+    color:white;
+    text-decoration: none;
+    margin-left: -50px;
+    margin-top: -92px;
+  }
+  #logo:active{
+    color:#f8b9d4;
+  }
+
+  #title{
+    font-size: 1.75em;
+    margin-top: 10px;
+    margin-left:90px;
+  }
+
+  #sub{
+    width:100%;
+    font-size: .85em;
+    margin-top: -100px;
+    margin-left:125px;
+  }
+  #party_info{
+    width:100%;
+    font-size: .5em;
+    margin-top: 175px;
+    margin-left:125px;
+    color:#404066;
+  }
+  #rsvp{
+    width: 100%;
+    font-size: .5em;
+    color: #404066;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 117px;
+    margin-top:150px;
+  }
+}

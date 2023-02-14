@@ -10,6 +10,7 @@
 <body>
     <div id="preloader">
         <img id="gif" src="videos/giphy.gif" alt="butt">
+        
     </div>
     <div id="loade-time">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player"
@@ -28,10 +29,42 @@
     <nav>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">Menu</a>
-                <a href="#">Contact</a>
-                <a href="#">Wishlist</a>
+                <a href="#"><button onclick="document.getElementById('Menu').style.display='block'">Menu</button></a>
+                <a href="#"><button onclick="document.getElementById('Contact').style.display='block'">Contact</button></a>
+                <a href="#"><button onclick="document.getElementById('Wishlist').style.display='block'">Wishlist</button></a>
                 <a href="#">RSVP</a>
+            </div>
+            <div class="overlay" id="Menu"  onclick="document.getElementById('Menu').style.display='none'">
+                <div class="Meal">
+                    <h1>Menu</h1>
+                    <ul>
+                        <li>Fruit bar</li>
+                        <li>Salad bar</li>
+                        <li>Pepperoni Pizza*</li>
+                        <li>Cheese Pizza*</li>
+                    </ul>
+                    <p>*There will also be an vegan option</p>
+                </div>
+            </div>
+            <div class="overlay" id="Contact" onclick="document.getElementById('Contact').style.display='none'">
+                <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                </div>
+            </div>
+            <div class="overlay" id="Wishlist" onclick="document.getElementById('Wishlist').style.display='none'">
+                <div>
+                <ul>
+                    <li>!</li>
+                    <li>@</li>
+                    <li>#</li>
+                    <li>$</li>
+                </ul>
+                </div>
             </div>
           </div>
           
@@ -67,6 +100,25 @@
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
+}
+var overlay_1=document.getElementById("Menu");
+var overlay_2=document.getElementById("Contact");
+var overlay_3=document.getElementById("Wishlist");
+/*function on() {
+    overlay_1.style.display = "block";
+}
+
+function off() {
+    overlay_1.style.display = "none";
+}*/
+window.onclick = function(event) {
+  if (event.target == overlay_1) {
+    overlay_1.style.display = "none";
+  }if (event.target == overlay_2) {
+    overlay_2.style.display = "none";
+  }if (event.target == overlay_3) {
+    overlay_3.style.display = "none";
+  }
 }
     </script>
 </body>
