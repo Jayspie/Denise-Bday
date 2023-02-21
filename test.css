@@ -23,20 +23,16 @@
 }
 
 body{
-  background-image:url("videos/playroom.jpg");
+  background-image:url("videos/frontdoor.png");
   background-size:cover;
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: HelloHeadlineW00Regular;
-  color:#fff;
+  color:#404066;
   text-align: center;
   font-size: 100px
-}
-
-#logo{
-  display:none;
 }
 
 .sidebar {
@@ -170,7 +166,7 @@ header{
 
 #rsvp{
   font-size: .5em;
-  color: #fff;
+  color:#404066 ;
   text-decoration: none;
 
 }
@@ -179,7 +175,7 @@ header{
   color:#f8b9d4;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 430px) { /*IPhone 12 pro max*/
   
 #gif{
   width:50%;
@@ -188,10 +184,11 @@ header{
   padding-bottom: 50%;
 }
 body{
-  width:100%;
-  max-width: 425px;
+  width: 60%;
+  height: 100%;
+  background-size: contain;
   background-size: cover;
-  background-position: 45%;
+  background-position: 65%;
   font-size:72px;
 }
 .openbtn {
@@ -204,36 +201,114 @@ body{
 }
 
 #title{
+  border:2px solid green;
   font-size: 1.75em;
   margin-top: 10px;
-  margin-left:90px;
+  margin-left:80px;
 }
 
 #sub{
-  width:100%;
+  border:2px solid green;
+  width: 200%;
   font-size: .85em;
   margin-top: -100px;
-  margin-left:125px;
+  margin-left:65px;
 }
 
 #party_info{
-  width:100%;
+  border:2px solid green;
+  width:200%;
   font-size: .5em;
   margin-top: 200px;
-  margin-left:122px;
-  color:#fff;
+  margin-left:65px;
+
 }
 
 #rsvp{
   width: 100%;
   font-size: .5em;
-  color: #fff;
+  border:2px solid green;
   text-decoration: none;
   white-space: nowrap;
-  margin-left: 110px;
+  margin-left: 105px;
   margin-top: 250px;
 }
+/*.vl {
+  border-left: 6px solid green;
+  height: 1000px;
+  position: absolute;
+  left: 75%;
+  margin-left: -3px;
+  top: 0;
+}*/
 }
+@media screen and (max-width: 415px) { /*Oneplus Nord 2, Iphone XR*/
+  
+  #gif{
+    width:50%;
+    height:auto;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+  body{
+    width: 25%;
+    height: 100%;
+    background-size: contain;
+    background-size: cover;
+    background-position: 65%;
+    font-size:72px;
+  }
+  .openbtn {
+    font-size: 1em;
+    background-color:transparent;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 550px;
+  }
+  
+  #title{
+    border:2px solid green;
+    font-size: 1.75em;
+    margin-top: 10px;
+    margin-left:65px;
+  }
+  
+  #sub{
+    border:2px solid green;
+    width: 200%;
+    font-size: .85em;
+    margin-top: -100px;
+    margin-left:60px;
+  }
+  
+  #party_info{
+    border:2px solid green;
+    width:200%;
+    font-size: .5em;
+    margin-top: 200px;
+    margin-left:60px;
+  
+  }
+  
+  #rsvp{
+    width: 100%;
+    font-size: .5em;
+    border:2px solid green;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 90px;
+    margin-top: 250px;
+  }
+  .vl {
+    border-left: 6px solid green;
+    height: 1000px;
+    position: absolute;
+    left: 75%;
+    margin-left: -3px;
+    top: 0;
+  }
+  }
 
 @media screen and (max-width: 375px) {
   #gif{
@@ -243,7 +318,6 @@ body{
     padding-bottom: 50%;
   }
   body{
-    background-image:url("videos/livingroom.png");
     background-size: cover;
     font-size:72px;
   }
@@ -254,18 +328,6 @@ body{
     padding: 10px 15px;
     border: none;
     margin-left: 550px;
-  }
-  #logo{
-    display: block;
-    width:100%;
-    font-size: .5em;
-    color:white;
-    text-decoration: none;
-    margin-left: -50px;
-    margin-top: -92px;
-  }
-  #logo:active{
-    color:#f8b9d4;
   }
 
   #title{
@@ -316,18 +378,6 @@ body{
     padding: 10px 15px;
     border: none;
     margin-left: 550px;
-  }
-  #logo{
-    display: block;
-    width:100%;
-    font-size: .5em;
-    color:white;
-    text-decoration: none;
-    margin-left: -50px;
-    margin-top: -92px;
-  }
-  #logo:active{
-    color:#f8b9d4;
   }
 
   #title{
