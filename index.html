@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8"/>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Denise's Party</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <img id="gif" src="videos/giphy.gif" alt="Bluey">
+        
+    </div>
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#"><button onclick="document.getElementById('Menu').style.display='block'">Menu</button></a>
+            <a href="#"id="Ts"><button onclick="document.getElementById('Contact').style.display='block'">Contact</button></a>
+            <a href="#"id="Ts"><button onclick="document.getElementById('Wishlist').style.display='block'">Wishlist</button></a>
+            <a href="https://forms.gle/uMKEzPMdzwXCgKgn7" target="_blank"><button>RSVP</button></a>
+            </div>
+            <div class="overlay" id="Menu"  onclick="document.getElementById('Menu').style.display='none'">
+                <div class="Meal">
+                    <h1>Menu</h1>
+                    <ul>
+                        <li>Fruit/veggie bar</li>
+                        <li>Pepperoni Pizza*</li>
+                        <li>Cheese Pizza*</li>
+                    </ul>
+                    <p>*There will also be an dairy-free option</p>
+                    <img id="sidegif-menu" src="videos/giphy.gif" alt="Bluey Dance" width="200" height="200">
+                </div>
+            </div>
+            <div class="overlay" id="Contact" onclick="document.getElementById('Contact').style.display='none'">
+                <div>
+                    <h1>Contact</h1>
+                <ul>
+                    <li>Tiffany Prophet: 832-769-6843</li>
+                    <li><br></li>
+                    <li>Dominque Prophet: 832-776-3046</li>
+                </ul>
+                <p>Text or call if you have any questions</p>
+                <img id="sidegif-contact" src="videos/giphy.gif" alt="Bluey Dance"  width="200" height="200">
+                </div>
+            </div>
+            <div class="overlay" id="Wishlist" onclick="document.getElementById('Wishlist').style.display='none'">
+                <div class="Wish">
+                    <h1>Wishlist</h1>
+                    <ul>
+                        <li><a href="#"><button onclick="document.getElementById('Toys').style.display='block'">Toys</button></a></li>
+                        <li><a href="#"><button onclick="document.getElementById('Clothes').style.display='block'">Clothes</button></a></li>
+                        <li><a href="#"><button onclick="document.getElementById('Favorite_shows').style.display='block'">Favorite shows</button></a></li>
+                    </ul>
+                    <img id="sidegif-wishlist" src="videos/giphy.gif" alt="Bluey Dance"  width="200" height="200">
+                </div>
+            </div>
+            <div class="overlay" id="Toys" onclick="document.getElementById('Toys').style.display='none'">
+                <div class="Toys">
+                    <h1>Toys</h1>
+                <ul>
+                    <li>Age-related puzzles</li>
+                    <li>Play food</li>
+                    <li>Educational toys</li>
+                    <li>Age-related books</li>
+                </ul>
+                <img id="sidegif-Toys" src="videos/giphy.gif" alt="Bluey Dance"  width="200" height="200">
+                </div> 
+          </div>
+
+          <div class="overlay" id="Clothes" onclick="document.getElementById('Clothes').style.display='none'">
+            <div>
+                <h1>Clothes</h1>
+            <ul>
+               <li>Shirts/Pants: 2T or 3T</li>
+               <li><br></li>
+               <li>Shoes:<br>Toddler 6 or 7</li>
+            </ul>
+            <img id="sidegif-Clothes" src="videos/giphy.gif" alt="Bluey Dance"  width="200" height="200">
+            </div>
+            </div>
+
+            <div class="overlay" id="Favorite_shows" onclick="document.getElementById('Favorite_shows').style.display='none'">
+                <div>
+                    <h1>Favorite shows</h1>
+                <ul>
+                   <li>Bluey</li>
+                   <li>Paw Patrol</li>
+                   <li>Bubble Guppies</li>
+                   <li>My little Pony</li>
+                   <li>Mickey Mouse<br>&<br>Friends</li>
+                </ul>
+                <img id="sidegif-Show" src="videos/giphy.gif" alt="Bluey Dance"  width="200" height="200">
+            </div>
+            </div>
+        <div id="main">
+            <img id="playroom" src="videos/playroom.jpg" alt="Bluey Dance">
+            <button class="openbtn" onclick="openNav()">&#9776</button> 
+          </div>
+    </nav>
+    <header>
+        <h1 id="title">Denise's</h1>
+        <h1 id="sub">3rd Birthday <br>Party</h1>
+    </header>
+    <main>
+        <p id="party_info">Saturday July 1<sup>st</sup> <br>
+            3pm - 6pm<br><br>
+            <a href="https://www.bouncebouncepark.com/" target="_blank">Bounce Bounce</a><br>
+            <a id="map-font"href="https://goo.gl/maps/vfjRcsgLxpEk7ckL8" target="_blank">7955 Barker Cypress Rd <br>
+                Cypress, TX 77433</a></p>
+        <a id="rsvp" href="https://forms.gle/uMKEzPMdzwXCgKgn7" target="_blank">RSVP here</a>
+    </main>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "215px";
+  document.getElementById("main").style.marginRight = "1250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+var overlay_1=document.getElementById("Menu");
+var overlay_2=document.getElementById("Contact");
+var overlay_3=document.getElementById("Wishlist");
+var overlay_31=document.getElementById("Toys");
+var overlay_32=document.getElementById("Clothes");
+var overlay_33=document.getElementById("Favorite_shows");
+
+window.onclick = function(event) {
+  if (event.target == overlay_1) {
+    overlay_1.style.display = "none";
+  }if (event.target == overlay_2) {
+    overlay_2.style.display = "none";
+  }if(event.target == overlay_3){
+    overlay_3.style.display = "none";
+  }if(event.target == overlay_31){
+    overlay_31.style.display = "none";
+  }if(event.target == overlay_32){
+    overlay_32.style.display = "none";
+  }if(event.target == overlay_32){
+    overlay_33.style.display = "none";
+  }
+}
+
+if (!location.hash) {
+location.hash = "#reloading";
+location.reload(true);
+} else {
+location.hash = "#reloaded";
+}
+
+    </script>
+</body>
+
+</html>
