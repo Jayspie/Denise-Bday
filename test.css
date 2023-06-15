@@ -1,0 +1,1563 @@
+#preloader{
+  background: linear-gradient(#88CAFC, #d2ebff);
+  height:100%;
+  width:100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+}
+
+  #gif{
+    display: block;
+    margin: 0 auto;
+
+  }
+
+@font-face {
+  font-family: HelloHeadlineW00Regular;
+  src: url("FontsFree-Net-Hello-Headline-W00-Regular.ttf")
+}
+
+body{
+  background: linear-gradient(#88CAFC, #d2ebff);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: HelloHeadlineW00Regular;
+  color:#404066;
+  text-align: center;
+  font-size: 100px;
+}
+
+  .sidebar {
+    overflow: hidden;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+    .sidebar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: .375em;
+    }
+
+    .sidebar button {
+      border:none;
+      background-color:transparent;
+      padding-bottom: 50px;
+      padding-left: 5px;
+      text-decoration: none;
+      font-size: 1em;
+      font-family:HelloHeadlineW00Regular;
+      text-align: left;
+      color: white;
+      display: block;
+      transition: 0.3s;
+      width: 75%;
+      height:10px;
+    }
+
+    .sidebar button:hover{
+      color: #f8b9d4; 
+    }
+
+    .sidebar a:hover {
+      color: #f8b9d4;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      width: 10px;
+      height: 0px;
+      display:none;
+    }
+
+    #sidemen{
+      display:none !important;
+    }
+
+    #playroom{
+      width:1260px; 
+      height:569px;
+    }
+    .openbtn {
+      font-size: 0.5em;
+      background-color:transparent;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      margin-left: 1200px;
+      margin-top: -850;
+      display:none;
+    }
+
+    .openbtn:hover {
+      color: #f8b9d4;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    main a{
+      text-decoration: none;
+    }
+
+    .overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #88CAFC;
+      opacity: 0.96;
+      z-index: 2;
+      cursor: pointer;
+      overflow-y: scroll;
+    }
+
+      #Menu h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Menu p{
+        font-size: .35em;
+      }
+
+      #Menu ul{
+        list-style-type: none;
+        margin-top: -20px;
+        text-align: center;
+      }
+
+      #Menu li{
+        font-size: .5em;
+        margin-top: 20px;
+      }
+      #sidegif-menu{
+        display: none;
+      }
+
+      #Contact h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Contact ul{
+        list-style-type: none;
+        margin-top: -20px;
+        text-align: center;
+      }
+
+      #Contact li{
+        font-size: .5em;
+        margin-top: 20px;
+      }
+      
+      #Contact p{
+        font-size: .45em;
+        text-align: center;
+        margin-left: 2%;
+      }
+
+      #sidegif-contact{
+        display: block;
+      }
+
+      #Wishlist h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Wishlist ul{
+        list-style-type: none;
+        margin-top: -20px;
+        text-align: center;
+      }
+
+      #Wishlist li{
+        font-size: .7em;
+        margin-top: 20px;
+      }
+      #Wishlist button{
+        border:10px;
+        color:#404066;
+        background-color:transparent;
+        text-decoration: none;
+        font-size: 1em;
+        font-family:HelloHeadlineW00Regular;
+      }
+
+      #Wishlist button:hover{
+        color:#f8b9d4;
+      }
+
+      #sidegif-wishlist{
+        display:none;
+      }
+      #Toys h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Toys ul{
+        list-style-type: none;
+        margin-top: -20px;
+      }
+
+      #Toys li{
+        font-size: .5em;
+        margin-top: 20px;
+      }
+
+      #sidegif-Toys{
+        display:none;
+      }
+
+      #Clothes h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Clothes ul{
+        list-style-type: none;
+        margin-top: -20px;
+      }
+
+      #Clothes li{
+        font-size: .5em;
+        margin-top: 20px;
+      }
+
+      #sidegif-Clothes{
+        display: none;
+      }
+
+      #Favorite_shows h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Favorite_shows ul{
+        list-style-type: none;
+        margin-top: -20px;
+      }
+
+      #Favorite_shows li{
+        font-size: .45em;
+        margin-top: 20px;
+      }
+
+      #sidegif-Show{
+        display:none;
+      }
+    #wavier{
+      width: 14%;
+    }
+
+  header{
+    margin-top:-65px;
+  }
+    #title{
+      font-size: 2em;
+      margin-top: -500px;
+    }
+
+    #sub{
+      font-size: 1em;
+      margin-top: -175px;
+    }
+
+  #party_info{
+    font-size: .5em;
+    margin-top: 10px;
+  }
+    #party_info p{
+      margin-top: 100px;
+    }
+    #party_info sup{
+      font-size: .5em;
+    }
+
+    #party_info a:link {
+      color:#404066;
+      text-decoration: none;
+    }
+    #party_info a:visited {
+      color:#404066;
+      text-decoration: none;
+    }
+    #party_info a:hover {
+      color:#f8b9d4;
+      text-decoration: none;
+    }
+
+  #rsvp{
+    font-size: .5em;
+    color:#404066 ;
+    text-decoration: none;
+    margin-top: -50px;
+  }
+
+  #rsvp:hover {
+    color:#f8b9d4;
+  }
+  #sidegif-home{
+    display:none;
+  }
+
+  footer a{
+    font-family: 'Courier New OS', monospace;
+    font-weight: normal;
+    font-size:.3em;
+    text-decoration: none;
+    color:#404066 ;
+  }
+
+  footer a:hover{
+    color:#f8b9d4;
+  }
+
+@media screen and (max-width: 2560px){ /*4k Tv */
+  .sidebar {
+    margin-left: 145px;
+  }
+
+  #Menu h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Menu p{
+    font-size: .5em;
+  }
+
+  #Menu ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Menu li{
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+  #sidegif-menu{
+    display: block;
+    margin:-350px 1700px;
+  }
+
+  #Contact h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Contact li{
+    font-size: .8em;
+  }
+
+  #sidegif-contact{
+    width:250px;
+    height: 250px;
+    margin: -80px auto;
+
+  }
+  
+  #Contact p{
+    font-size: .5em;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  #Wishlist h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Wishlist ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Wishlist li{
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  #Toys h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Toys ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Toys li{
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+
+  #Clothes h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Clothes ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Clothes li{
+    font-size: 1em;
+    margin-top: 20px;
+    width:30%;
+    margin: 0px auto;
+  }
+
+  #Favorite_shows h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Favorite_shows ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Favorite_shows li{
+    font-size: .6em;
+    margin-top: 20px;
+  }
+
+  #playroom{
+    width:1800px; 
+    height:630px;
+    margin:0px auto;
+  }
+
+ #title{
+    margin-top: -525px;
+    }
+
+  #sidegif-home{
+      display:block;
+      margin:0px auto;
+  }
+}
+
+@media screen and (max-width: 1950px) { /*Computer Monitors*/
+  .sidebar {
+    margin-left:15px;
+  }
+  #sidegif-menu{
+    display: block;
+    margin:-350px 1400px;
+  }
+  #wavier{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1440px) { /*Large Laptops*/
+  body{
+    font-size:100px;
+  }
+  .sidebar {
+    margin-left:15px;
+  }
+
+  .overlay {
+    overflow-y: scroll;
+  }
+
+  #Menu h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Menu p{
+    font-size: .45em;
+  }
+
+  #Menu ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Menu li{
+    font-size: .75em;
+    margin-top: 20px;
+  }
+
+  #sidegif-menu{
+    display: block;
+    margin:-350px 1050px;
+    width:250px;
+    height: 250px;
+  }
+
+  #Contact h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Contact li{
+    font-size: .65em;
+    margin-top: 20px;
+  }
+  
+  #Contact p{
+    font-size: .4em;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  #Wishlist h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Wishlist ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Wishlist li{
+    font-size: .85em;
+    margin-top: 20px;
+  }
+
+  #sidegif-wishlist{
+    display: block;
+    width: 250px;
+    height:250px;
+    margin-top:100px;
+  }
+
+  #sidegif-wishlist{
+    display:block;
+    margin-top:-250px;
+  }
+  #Toys h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Toys ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Toys li{
+    font-size: .7em;
+    margin-top: 20px;
+  }
+
+
+  #Clothes h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Clothes ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Clothes li{
+    font-size: .8em;
+    margin-top: 20px;
+    width:45%;
+  }
+
+  #sidegif-Clothes{
+    display: block;
+    margin-top:-400px;
+    margin-left:150px;
+    width:250px;
+    height:250px;
+  }
+
+  #Favorite_shows h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Favorite_shows ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Favorite_shows li{
+    font-size: .45em;
+    margin-top: 20px;
+  }
+
+  #wavier{
+    width: 24%;
+  }
+
+  #playroom{
+    width:1260px; 
+    height:569px;
+  }
+
+  #title{
+    margin-top: -550px;
+  }
+  
+}
+
+@media screen and (max-width: 1024px) { /*Laptops*/
+  .sidebar {
+    margin-left:0px;
+  }
+
+  #Contact p{
+    font-size: .35em;
+
+  }
+
+  #wavier{
+    width: 25%;
+    font-size: .3em
+  }
+
+  #sidegif-wishlist{
+    display: block;
+    width: 250px;
+    height:250px;
+    margin:-100px auto;
+  }
+
+  #playroom{
+    width:900px; 
+    height:350px;
+  }
+  
+  #title{
+    font-size: 1.25em;
+    margin-top: -350px;
+    margin-left:10px;
+  }
+  
+  #sub{
+    text-align: center;
+    width: 100%;
+    font-size: .65em;
+    margin-top: -75px;
+    margin-left:1px;
+  }
+}
+
+@media screen and (max-width: 900px) { /*Tablets*/
+  body{
+    background: linear-gradient(#88CAFC, #d2ebff);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .sidebar {
+    margin-left:-10px;
+  }
+
+  #wavier{
+    padding-top: 20px;
+    width: 225px;
+    font-size: .35em;
+  }
+
+  #sidegif-wishlist{
+    display: block;
+    width: 300px;
+    height:300px;
+    margin: -100px auto;
+  }
+
+  #Contact h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Contact li{
+    font-size: .5em;
+    margin-top: 20px;
+  }
+  
+  #Contact p{
+    font-size: .49em;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  #sidegif-contact{
+    display: block;
+    width:315px;
+    height:315px;
+    margin: 0px auto;
+  }
+
+  #Toys h1{
+    font-size: 1em;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #Toys ul{
+    list-style-type: none;
+    margin: 20px auto;
+  }
+
+  #Toys li{
+    font-size: .7em;
+    margin-top: 75px;
+  }
+
+  #Clothes h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Clothes ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Clothes li{
+    width: 65%;
+    font-size: .7em;
+    margin-top: 75px;
+  }
+
+  #sidegif-Clothes{
+    display: block;
+    margin:-550px auto;
+    width:275px;
+    height:275px;
+  }
+
+  #Favorite_shows h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Favorite_shows ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Favorite_shows li{
+    font-size: .45em;
+    margin-top: 75px;
+  }
+
+  #playroom{
+    width:800px; 
+    height:250px;
+  }
+  
+  #title{
+    font-size: .95em;
+    margin-top: -250px;
+    margin-left:-10px;
+  }
+  
+  #sub{
+    text-align: center;
+    width: 100%;
+    font-size: .45em;
+    margin-top: -75px;
+    margin-left:1px;
+  }
+
+  #party_info{
+    font-size: .45em;
+  
+  }
+    #map-font{
+      font-size: .9em;
+    }
+  
+  #rsvp{
+    font-size: .45em;
+    margin-top: 50px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 840px) { /*Tablets*/
+  body{
+    background: linear-gradient(#88CAFC, #d2ebff);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .sidebar {
+    margin-left:20px;
+  }
+
+  #wavier{
+    padding-top: 15px;
+    width: 25%;
+    font-size: .35em;
+  }
+
+  #Contact h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Contact li{
+    font-size: .45em;
+    margin-top: 20px;
+  }
+
+  #Clothes h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Clothes ul{
+    list-style-type: none;
+    margin-top: -20px;
+  }
+
+  #Clothes li{
+    width: 65%;
+    font-size: .7em;
+    margin-top: 100px;
+  }
+
+  #sidegif-Clothes{
+    display: block;
+    margin:-550px auto;
+    width:275px;
+    height:275px;
+  }
+
+  #Wishlist ul{
+    list-style-type: none;
+    margin: -20px auto;
+    text-align: center;
+  }
+
+  #Wishlist li{
+    font-size: .75em;
+    margin-top: 20px;
+  }
+
+  #sidegif-wishlist{
+    display: block;
+    width: 250px;
+    height:250px;
+    margin: -25px auto;
+  }
+
+  #playroom{
+    width:700px; 
+    height:550;
+  }
+}
+
+@media screen and (max-width: 430px) { /*IPhone 12 pro max */
+#gif{
+  width:55%;
+  height:auto;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+body{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-size: 72px;
+  text-align: center;
+  overflow-y: scroll;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(#88CAFC, #d2ebff);opacity:.96;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+  .sidebar a {
+    /*border:2px solid green;*/
+    padding-bottom: 85px;
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: .375em;
+    text-align: left;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    /*take off or change the width when adding the menu*/
+    width:100%;
+  }
+  #wavier{
+    width:150%;
+    font-size:.4em;
+  }
+
+  .sidebar button {
+    border:none;
+    background-color:transparent;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family:HelloHeadlineW00Regular;
+    text-align: left;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    width: 85%;
+    height:10px;
+    /*take off or change the margins when putting back the menu*/
+    margin-top:-100px;
+    margin-bottom:150px;
+  }
+
+  .sidebar button:hover{
+    color: #f8b9d4; 
+  }
+
+  .sidebar a:hover {
+    color: #f8b9d4;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    width: 10px;
+    height: 0px;
+    display:block;
+  }
+
+  .openbtn {
+    font-size: .5em;
+    display: block;
+    margin-left:340px;
+    margin-top:-240px;
+  }
+
+  .openbtn:hover {
+    color: #f8b9d4;
+  }
+
+#playroom{
+  width:385px; 
+  height:150px;
+  margin-top:50px;
+  margin-left: -15px;
+}
+
+#title{
+  font-size: 1em;
+  margin-top: 65px;
+}
+
+#sub{
+  font-size: .4em;
+  margin-top: -65px;
+  margin-left: -5px;
+}
+
+#party_info{
+  font-size: .55em;
+
+}
+  #map-font{
+    font-size: .85em;
+  }
+
+#rsvp{
+  font-size: .7em;
+}
+
+ #Menu h1{
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Menu p{
+   
+    width: 95%;
+    text-align: center;
+    font-size: .30em;
+    margin-left: 2%;
+  }
+
+  #Menu ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+    width: 85%;
+  }
+
+  #Menu li{
+    font-size: .5em;
+    margin-top: 20px;
+    left: -50px;
+  }
+  #sidegif-menu{
+    display:block;
+    margin-left: 150px;
+    text-align: center;
+  }
+
+  #Contact h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -20px;
+    text-align: center;
+    margin-left: 1%;
+    width: 82%;
+
+  }
+
+  #Contact li{
+    font-size: .5em;
+    margin-top: 20px;
+    margin-left: -10px;
+    text-decoration: none;
+    width:100%;
+  }
+
+  #Contact p{
+    font-size: .35em;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  #sidegif-contact{
+    display:block;
+    margin:0px auto;
+    text-align: center;
+  }
+
+  #Wishlist h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Wishlist ul{
+    list-style-type: none;
+    margin-left:-10%;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Wishlist li{
+    width: 105%;
+    margin-left:0px;
+    font-size: .55em;
+    margin-top: 20px;
+  }
+  #Wishlist button{
+    border:10px;
+    color:#404066;
+    background-color:transparent;
+    text-decoration: none;
+    font-size: 1em;
+    font-family:HelloHeadlineW00Regular;
+  }
+  #sidegif-wishlist{
+    display:block;
+    width:200px;
+    height:200px;
+    margin:-10px auto;
+    text-align: center;
+  }
+    #Toys h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Toys ul{
+      width: 75%;
+      list-style-type: none;
+      margin-top: -20px;
+      margin-left:15px;
+    }
+
+    #Toys li{
+      font-size: .6em;
+      margin-left: 15px;
+      margin-top: 45px;
+      text-align: center;
+    }
+    
+    #Clothes h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Clothes ul{
+      width: 60%;
+      margin-top: -20px;
+      margin-left: 45px;
+    }
+
+    #Clothes li{
+      width: 115%;
+      font-size: .6em;
+      margin-top: 20px;
+      margin-bottom: 75px;
+      text-align: center;
+    }
+
+    #sidegif-Clothes{
+      display:block;
+      margin-left: 150px;
+      margin-top: -400px;
+      text-align: center;
+      width:200px;
+      height:200px;
+    }
+
+    #Favorite_shows h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Favorite_shows ul{
+      width:85%;
+      list-style-type: none;
+      margin-top: -20px;
+    }
+
+    #Favorite_shows li{
+      font-size: .5em;
+      margin-top: 35px;
+      text-align: center;
+    }
+    #author{
+      display:block;
+      width: 150%;
+      font-family: 'Courier New OS', monospace;
+      font-weight: normal;
+      font-size:.2em;
+      color:#404066 ;
+    }
+
+
+}
+
+@media screen and (max-width: 393px) { /*Oneplus Nord 2, Iphone XR*/ 
+  .openbtn {
+    font-size: .5em;
+    display: block;
+    margin-left:330px;
+    margin-top:-240px;
+  }
+
+  #Menu h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Menu p{
+    width: 95%;
+    text-align: center;
+    font-size: .3em;
+    margin-left: 2%;
+    margin-top: -40px;
+  }
+
+  #Menu li{
+    font-size: .5em;
+    margin-top: 20px;
+    left: -50px;
+  }
+  #sidegif-menu{
+    display:block;
+    margin-left: 150px;
+    text-align: center;
+    margin-top: -15px;
+  }
+
+  #Contact h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Contact ul{
+    list-style-type: none;
+    margin-top: -10px;
+    text-align: center;
+    margin-left: 1%;
+    width: 82%;
+
+  }
+
+  #Contact li{
+    font-size: .5em;
+    margin-top: 20px;
+  }
+
+  #Contact p{
+    font-size: .35em;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  #sidegif-contact{
+    display:block;
+    margin-top:-30px;
+    width:300px;
+    height: 300px;
+  }
+
+  #Wishlist h1{
+    font-size: 1em;
+    margin-top:10px;
+    text-align: center;
+  }
+
+  #Wishlist ul{
+    list-style-type: none;
+    margin-left:-10%;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  #Wishlist li{
+    width: 95%;
+    margin-left:15px;
+    font-size: .55em;
+    margin-top: 35px;
+  }
+
+  #sidegif-wishlist{
+    display:block;
+    margin: -10px auto;
+    text-align: center;
+  }
+    #Toys h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Toys li{
+      font-size: .5em;
+      margin-left: 15px;
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    #sidegif-Toys{
+      display:block;
+      margin-top: -85px;
+      margin-left: 150px;
+      width:150px;
+      height:150px;
+    }
+    
+    #Clothes h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Clothes li{
+      width: 110%;
+      font-size: .5em;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #sidegif-Clothes{
+      display:block;
+      margin-top: -375px;
+      margin-left: 150px;
+      text-align: center;
+    }
+
+    #Favorite_shows h1{
+      font-size: .7em;
+      margin-top:10px;
+      text-align: center;
+    }
+
+    #Favorite_shows ul{
+      width:85%;
+      list-style-type: none;
+      margin-top: -20px;
+    }
+
+    #Favorite_shows li{
+      font-size: .45em;
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    #sidegif-Show{
+      display:block;
+      margin-top: -85px;
+      margin-left: 150px;
+    }
+
+  #title{
+    font-size: 1em;
+    margin-top: 70px;
+  }
+
+  }
+
+@media screen and (max-width: 320px) {
+  .sidebar button {
+    border:none;
+    background-color:transparent;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family:HelloHeadlineW00Regular;
+    text-align: left;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    width: 85%;
+    height:10px;
+  } 
+    #Menu h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+  
+    #Menu p{
+      width: 95%;
+      text-align: center;
+      font-size: .30em;
+      margin-left: 2%;
+      margin-top: -50px;
+    }
+
+    #Menu li{
+      font-size: .45em;
+      margin-top: 20px;
+      left: -50px;
+    }
+    #sidegif-menu{
+      display:block;
+      margin-left: 150px;
+      text-align: center;
+      margin-top: -35px;
+    }
+  
+    #Contact h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+  
+    #Contact ul{
+      list-style-type: none;
+      margin-top: -10px;
+      text-align: center;
+      margin-left: 1%;
+      width: 82%;
+  
+    }
+  
+    #Contact li{
+      font-size: .5em;
+      margin-top: 20px;
+    }
+  
+    #Contact p{
+      font-size: .35em;
+      text-align: center;
+      margin-left: 2%;
+    }
+  
+   
+  
+    #Wishlist h1{
+      font-size: 1em;
+      margin-top:10px;
+      text-align: center;
+    }
+  
+    #Wishlist ul{
+      list-style-type: none;
+      margin-left:-10%;
+      margin-top: -20px;
+      text-align: center;
+    }
+  
+    #Wishlist li{
+      width: 95%;
+      margin-left:15px;
+      font-size: .55em;
+      margin-top: 50px;
+    }
+
+    #sidegif-wishlist{
+      display:block;
+      margin: -35px auto;
+      text-align: center;
+    }
+      #Toys h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+
+      #Toys li{
+        font-size: .5em;
+        margin-left: 15px;
+        margin-top: 45px;
+        text-align: center;
+      }
+      
+      #sidegif-Toys{
+        display: none;
+      }
+
+      #Clothes h1{
+        font-size: 1em;
+        margin-top:10px;
+        text-align: center;
+      }
+  
+      #Clothes li{
+        width: 110%;
+        font-size: .5em;
+        margin-top: 20px;
+        text-align: center;
+      }
+  
+      #sidegif-Clothes{
+        display:block;
+        margin-top: -100px;
+        margin-left: 150px;
+        text-align: center;
+      }
+  
+      #Favorite_shows h1{
+        font-size: .7em;
+        margin-top:10px;
+        text-align: center;
+      }
+  
+      #Favorite_shows ul{
+        width:85%;
+        list-style-type: none;
+        margin-top: -20px;
+      }
+  
+      #Favorite_shows li{
+        font-size: .45em;
+        margin-top: 35px;
+        text-align: center;
+      }
+
+      #sidegif-Show{
+        display:none;
+      }
+  
+  #playroom{
+    width:385px; 
+    height:150px;
+    margin-top:50px;
+    margin-left: -15px;
+  }
+  
+  #title{
+    font-size: 1em;
+    margin-top: 65px;
+  }
+}
