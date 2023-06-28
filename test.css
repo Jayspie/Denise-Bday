@@ -29,6 +29,10 @@ body{
   font-size: 100px;
 }
 
+#demo{
+  color:white;
+}
+
   .sidebar {
     overflow: hidden;
     text-align: center;
@@ -336,9 +340,14 @@ body{
 
 @media screen and (max-width: 2560px){ /*4k Tv */
   .sidebar {
-    margin-left: 145px;
+    margin-left: 325px;
   }
-
+  #demo{
+    margin-left:300px;
+  }
+  #phdemo{
+    display:none;
+  }
   #Menu h1{
     font-size: 1.25em;
     margin-top:10px;
@@ -488,6 +497,9 @@ body{
   #wavier{
     width: 20%;
   }
+  #phdemo{
+    display:none;
+  }
 }
 
 @media screen and (max-width: 1440px) { /*Large Laptops*/
@@ -495,9 +507,15 @@ body{
     font-size:100px;
   }
   .sidebar {
-    margin-left:15px;
+    margin-left:35px;
   }
 
+  #demo{
+    margin-left:50px;
+  }
+  #phdemo{
+    display:none;
+  }
   .overlay {
     overflow-y: scroll;
   }
@@ -659,14 +677,21 @@ body{
     margin-left:0px;
   }
 
+  #demo{
+    margin-left:35px;
+  }
+  #phdemo{
+    display:none;
+  }
   #Contact p{
     font-size: .35em;
 
   }
 
   #wavier{
-    width: 25%;
-    font-size: .3em
+    width:10%;
+    padding-left: 0;
+    font-size: .35em
   }
 
   #sidegif-wishlist{
@@ -697,7 +722,7 @@ body{
 }
 
 @media screen and (max-width: 900px) { /*Tablets*/
-  body{
+ body{
     background: linear-gradient(#88CAFC, #d2ebff);
     background-size: cover;
     background-attachment: fixed;
@@ -709,10 +734,15 @@ body{
     margin-left:-10px;
   }
 
+  #demo{
+    display:none;
+  }
+
   #wavier{
-    padding-top: 20px;
-    width: 225px;
-    font-size: .35em;
+    width:10%;
+    padding-left: 0;
+    
+    font-size: .35em
   }
 
   #sidegif-wishlist{
@@ -840,6 +870,8 @@ body{
     margin-top: 50px;
     display: block;
   }
+
+  
 }
 
 @media screen and (max-width: 840px) { /*Tablets*/
@@ -932,7 +964,6 @@ body{
   padding-top: 50%;
   padding-bottom: 50%;
 }
-
 body{
   background-size: cover;
   background-attachment: fixed;
@@ -971,6 +1002,7 @@ body{
   }
   #wavier{
     width:150%;
+    padding-left:25px;
     font-size:.4em;
   }
 
@@ -1022,6 +1054,15 @@ body{
     color: #f8b9d4;
   }
 
+#phdemo{
+  display:block;
+  color:white;
+  font-size: .5em;
+  margin-top: -70px;
+  margin-left:0px;
+  width:65%;
+}
+
 #playroom{
   width:385px; 
   height:150px;
@@ -1031,7 +1072,7 @@ body{
 
 #title{
   font-size: 1em;
-  margin-top: 65px;
+  margin-top: 0px;
 }
 
 #sub{
@@ -1387,10 +1428,19 @@ body{
       margin-top: -85px;
       margin-left: 150px;
     }
+  
+  #phdemo{
+      display:block;
+      color:white;
+      font-size: .5em;
+      margin-top: -70px;
+      margin-left:-10px;
+      width:65%;
+    }
 
   #title{
     font-size: 1em;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   }
