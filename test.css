@@ -512,6 +512,7 @@ body{
 
   #demo{
     margin-left:50px;
+    
   }
   #phdemo{
     display:none;
@@ -1044,7 +1045,7 @@ body{
   }
 
   .openbtn {
-    font-size: .5em;
+    font-size: .6em;
     display: block;
     margin-left:340px;
     margin-top:-240px;
@@ -1072,7 +1073,7 @@ body{
 
 #title{
   font-size: 1em;
-  margin-top: 0px;
+  margin-top: -10px;
 }
 
 #sub{
@@ -1274,10 +1275,14 @@ body{
 
 @media screen and (max-width: 393px) { /*Oneplus Nord 2, Iphone XR*/ 
   .openbtn {
-    font-size: .5em;
+    font-size: .6em;
     display: block;
     margin-left:330px;
-    margin-top:-240px;
+    margin-top:-295px;
+  }
+
+  #playroom{
+    margin:50px 0px;
   }
 
   #Menu h1{
@@ -1433,14 +1438,14 @@ body{
       display:block;
       color:white;
       font-size: .5em;
-      margin-top: -70px;
-      margin-left:-10px;
+      margin-top: -50px;
+      margin-left:10px;
       width:65%;
     }
 
   #title{
     font-size: 1em;
-    margin-top: 30px;
+    margin-top: -10px;
   }
 
   }
